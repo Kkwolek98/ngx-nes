@@ -1,0 +1,17 @@
+<div class="nes-field"
+    [ngClass]= "{
+      'is-inline': inline
+    }"
+>
+    <label>{{ label }}</label>
+    <input
+        [type]="type"
+        class="nes-input"
+        [ngClass]= "{
+            'is-success': appearance === 'success',
+            'is-warning': appearance === 'warning',
+            'is-error': appearance === 'error'
+        }"    
+    >
+  </div>
+  
