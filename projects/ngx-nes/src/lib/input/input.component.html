@@ -5,6 +5,8 @@
 >
     <label>{{ label }}</label>
     <input
+        [(ngModel)]="value"
+        [disabled]="disabled"
         [type]="type"
         class="nes-input"
         [ngClass]= "{

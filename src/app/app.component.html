@@ -1,7 +1,7 @@
 <details>
     <summary>Input</summary>
-    <div style="width: 50%">
-        <nes-input label="Label" [inline]="true" appearance="warning"></nes-input>
+    <div [formGroup]="form" style="width: 50%">
+        <nes-input formControlName="input" label="Label" [inline]="true" appearance="warning"></nes-input>
     </div>
     <div style="width: 50%">
         <nes-input label="Error" [inline]="true" appearance="error"></nes-input>
