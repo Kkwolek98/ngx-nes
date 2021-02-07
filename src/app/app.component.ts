@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'ngx-nes-lib';
 
   public form: FormGroup;
+  public style = 'disabled';
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
       input: ''

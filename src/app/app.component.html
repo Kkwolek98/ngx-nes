@@ -13,3 +13,13 @@
         <nes-input label="Default" [inline]="true"></nes-input>
     </div>
 </details>
+
+<details>
+    <summary>Text directive</summary>
+    <div nesText="primary">Primary</div>
+    <div nesText="success">Success</div>
+    <div nesText="warning">Warning</div>
+    <div nesText="error">Error</div>
+    <div nesText="disabled">Disabled</div>
+    <div [nesText]="style" (click)="style === 'warning' ? style = 'success' : style = 'warning'">Click me</div>
+</details>
