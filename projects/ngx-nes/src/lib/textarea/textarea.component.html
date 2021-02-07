@@ -1,0 +1,13 @@
+<label>{{ label }}</label>
+<textarea class="nes-textarea"
+    [(ngModel)]="value"
+    [ngClass]= "{
+        'is-success': appearance === 'success',
+        'is-warning': appearance === 'warning',
+        'is-error': appearance === 'error',
+        'small': size === 'small',
+        'medium': size === 'medium',
+        'big': size === 'big',
+        'nes-not-resizable': !resizable || size
+    }"  
+></textarea>

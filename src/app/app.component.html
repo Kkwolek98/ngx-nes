@@ -23,3 +23,11 @@
     <div nesText="disabled">Disabled</div>
     <div [nesText]="style" (click)="style === 'warning' ? style = 'success' : style = 'warning'">Click me</div>
 </details>
+
+<details>
+    <summary>Textarea</summary>
+    <nes-textarea label="Default"></nes-textarea>
+    <nes-textarea [resizable]="false" appearance="warning" label="Not resizable"></nes-textarea>
+    <nes-textarea size="big" label="Big textarea"></nes-textarea>
+    <nes-textarea size="small" label="Small textarea"></nes-textarea>
+</details>
