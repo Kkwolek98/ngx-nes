@@ -1,0 +1,33 @@
+<button *ngIf="type !== 'file' else filePicker" [type]="type" class="nes-btn"
+    [ngClass]="{
+        'is-success': appearance === 'success',
+        'is-warning': appearance === 'warning',
+        'is-error': appearance === 'error',
+        'is-primary':  appearance === 'primary',
+        'is-disabled': appearance === 'disabled' || disabled
+    }"
+    [disabled]="appearance === 'disabled'"
+>
+    <ng-container *ngTemplateOutlet="content"></ng-container>
+</button>
+
+<ng-template #filePicker>
+    <label class="nes-btn"
+        [ngClass]="{
+            'is-success': appearance === 'success',
+            'is-warning': appearance === 'warning',
+            'is-error': appearance === 'error',
+            'is-primary':  appearance === 'primary',
+            'is-disabled': appearance === 'disabled'
+        }"
+    >
+        <span>
+            <ng-container *ngTemplateOutlet="content"></ng-container>
+        </span>
+        <input type="file">
+      </label>
+</ng-template>
+
+<ng-template #content>
+    <ng-content></ng-content>
+</ng-template>
