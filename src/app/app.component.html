@@ -43,3 +43,9 @@
     <nes-button [disabled]="true" appearance="primary">Primary Disabled</nes-button>
     <nes-button appearance="primary" type="file">Pick file</nes-button>
 </details>
+
+<details [formGroup]="form">
+    <summary>Radio</summary>
+    <nes-radio label="Standard radio" [options]="radioOptions" valueAccessKey="value" titleAccessKey="title" ></nes-radio>
+    <nes-radio formControlName="radio" appearance="dark" [inline]="false" label="Standard radio" [options]="radioOptions" valueAccessKey="value" titleAccessKey="title" ></nes-radio>
+</details>

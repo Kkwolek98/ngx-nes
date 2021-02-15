@@ -1,0 +1,6 @@
+<div [class.dark]="appearance === 'dark'" [style.display]="inline ? 'inline' : 'block'"  *ngFor="let option of options; let i = index">
+    <label>
+        <input type="radio" class="nes-radio" [class.is-dark]="appearance === 'dark'" [name]="uniqueID" [value]="option[valueAccessKey]" [(ngModel)]="value" />
+        <span>{{ option[titleAccessKey] }}</span>
+    </label>
+</div>

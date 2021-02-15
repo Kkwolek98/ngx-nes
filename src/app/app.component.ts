@@ -7,13 +7,31 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngx-nes-lib';
+  public radioOptions = [
+    {
+      title: "Option1",
+      value: "opt1"
+    },
+    {
+      title: "Option2",
+      value: "opt2"
+    },
+    {
+      title: "Option3",
+      value: "opt3"
+    },
+    {
+      title: "Option4",
+      value: "opt4"
+    }
+  ];
 
   public form: FormGroup;
   public style = 'disabled';
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
-      input: ''
+      input: '',
+      radio: '',
     });
 
     this.form.valueChanges.subscribe(val => console.log(val));
