@@ -6,7 +6,7 @@ Component library for Angular made with [NES.css](https://nostalgic-css.github.i
 
 - [x] Texts
 - [x] Buttons
-- [ ] Radios
+- [x] Radios
 - [ ] Checkboxes
 - [x] Inputs
 - [x] Textarea
